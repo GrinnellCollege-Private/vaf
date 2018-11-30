@@ -1,0 +1,6 @@
+.DS_Store/
+public/
+themes/hugrid/
+*.tif
+*.tiff
+
