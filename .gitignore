@@ -1,6 +1,5 @@
 .DS_Store/
 public/
 themes/hugrid/
-*.tif
-*.tiff
-
+static/images/originals/
+*.TIF
