@@ -1,4 +1,5 @@
-#baseurl = "http://example.org/"
+baseurl = "https://static.grinnell.edu/vaf/"
+# baseurl = "http://example.org/"
 languageCode = "en-us"
 title = "Visualizing Abolition and Freedom"
 theme = "hugrid"
