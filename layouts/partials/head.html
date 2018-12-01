@@ -15,7 +15,10 @@
 		</style>
 		<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/default.css" />
 		<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/component.css" />
+    <!-- Next line by MAM to pull in css/custom.css -->
+		<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/custom.css" />
+    <!-- Next 3 lines/range loop removed by MAM.  This construct does not work with static pages
 		{{ range .Site.Params.custom_css }}
 			<link rel="stylesheet" href="{{ . }}">
-		{{ end }}
+		{{ end }} -->
 		<script src="{{ .Site.BaseURL }}js/modernizr.custom.js"></script>

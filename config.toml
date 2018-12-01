@@ -1,6 +1,6 @@
 # baseurl = "https://static.grinnell.edu/vaf/"
-# baseurl = "http://var.docksal"
-baseurl = "http://localhost:8081/"
+baseurl = "https://var.docksal/"
+# baseurl = "http://localhost:8081/"
 
 languageCode = "en-us"
 title = "Visualizing Abolition and Freedom"
@@ -16,19 +16,44 @@ publishdir = "public"
 [params]
     # Meta
     title = "Visualizing Abolition and Freedom"
-    subtitle = "TBE"
-    author = "TBE"
-    description = "TBE"
-    keywords = "Hugo, Hugo theme, grid theme, portfolio, bookmarks, collection, contacts, Haitian, art, freedom, abolition"
+    subtitle = "Edit config.toml|params|subtitle to change this."
+    author = "This is config.toml|params|author"
+    description = "This is config.toml|params|description"
+    keywords = "abolition, freedom, Haiti, art, Grinnell College, HSSC"
 
     # Body background color
     bodybgcolor = "#f9f9f9"
 
+
     # Preview container button text
-    buttontext = "Get the theme"
+    buttontext = "This is config.toml|params|buttontext"
 
     # Footer text
-    footertext = "Made by [Codrops](http://tympanus.net/codrops/2013/03/19/thumbnail-grid-with-expanding-preview/), [Hugo](http://gohugo.io) and [Pavel Kanyshev](https://github.com/aerohub)"
+    footertext = "[Grinnell College Libraries](https://github.com/grinnellcollege-private)"
 
-    # add extra-css
-    # custom_css = ['css/extra1.css', 'css/extra2.css']
+    # add custom css
+    custom_css = ['css/custom.css']
+
+
+# Lifted from https://gohugo.io/content-management/menus/
+[menu]
+
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    pre = "<i class='home-page'></i>"
+    url = "/"
+    weight = -120
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About the Project"
+    pre = "<i class='about-page'></i>"
+    url = "/about/"
+    weight = -110
+
+  [[menu.main]]
+    name = "Production Credits"
+    pre = "<i class='credits-page'></i>"
+    url = "/credits/"
+    weight = -100
