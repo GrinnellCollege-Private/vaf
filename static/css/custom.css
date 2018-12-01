@@ -1,3 +1,7 @@
 .og-grid li {
     margin: 0 0;
 }
+
+nav.top-nav a {
+  padding: 0 1em;
+}
