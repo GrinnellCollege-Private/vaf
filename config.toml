@@ -26,7 +26,7 @@ publishdir = "public"
 
 
     # Preview container button text
-    buttontext = "Visit this object in Digital.Grinnell."
+    buttontext = "Visit this object in Digital.Grinnell"
 
     # Footer text
     footertext = "[Grinnell College Libraries](https://github.com/grinnellcollege-private)"
