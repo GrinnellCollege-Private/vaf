@@ -13,9 +13,13 @@ nav.top-nav a {
 }
 
 .container > header {
-    padding: 60px 30px 0px;
+  padding: 60px 30px 0px;
+}
+
+.og-expander {
+  margin: 10px;
 }
 
 .og-expander-inner {
-    padding: 10px;
+  padding: 10px;
 }
