@@ -5,3 +5,8 @@
 nav.top-nav a {
   padding: 0 1em;
 }
+
+.thumbnail {
+  height: 240px;
+  width: 275px;
+}

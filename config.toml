@@ -26,7 +26,7 @@ publishdir = "public"
 
 
     # Preview container button text
-    buttontext = "This is config.toml|params|buttontext"
+    buttontext = "Visit this object in Digital.Grinnell."
 
     # Footer text
     footertext = "[Grinnell College Libraries](https://github.com/grinnellcollege-private)"
