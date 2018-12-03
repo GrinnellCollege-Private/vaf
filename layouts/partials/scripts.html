@@ -148,7 +148,7 @@
 					};
 
 				function init( config ) {
-					
+
 					settings = $.extend( true, {}, settings, config );
 
 					$grid.imagesLoaded( function() {
@@ -188,11 +188,11 @@
 				}
 
 				function initEvents() {
-					
+
 					initItemsEvents( $items );
-					
+
 					$window.on( 'debouncedresize', function() {
-						
+
 						scrollExtra = 0;
 						previewPos = -1;
 						saveItemInfo();
@@ -242,7 +242,7 @@
 							preview.update( $item );
 							return false;
 						}
-						
+
 					}
 
 					previewPos = position;
@@ -268,9 +268,10 @@
 				Preview.prototype = {
 					create : function() {
 						this.$title = $( '<h3></h3>' );
+						this.$creator = $( '<p></p>' );
 						this.$description = $( '<p></p>' );
 						this.$href = $( '<a href="#" target="_blank">{{ .Site.Params.buttontext }}</a>' );
-						this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$description, this.$href );
+						this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$creator, this.$description, this.$href );
 						this.$loading = $( '<div class="og-loading"></div>' );
 						this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
 						this.$closePreview = $( '<span class="og-close"></span>' );
@@ -286,7 +287,7 @@
 						if( $item ) {
 							this.$item = $item;
 						}
-						
+
 						if( current !== -1 ) {
 							var $currentItem = $items.eq( current );
 							$currentItem.removeClass( 'og-expanded' );
@@ -301,11 +302,13 @@
 								href : $itemEl.attr( 'href' ),
 								largesrc : $itemEl.data( 'largesrc' ),
 								title : $itemEl.data( 'title' ),
+								creator : $itemEl.data( 'creator' ),
 								description : $itemEl.data( 'description' ),
 								buttontext : $itemEl.data( 'buttontext' )
 							};
 
 						this.$title.html( eldata.title );
+						this.$creator.html( eldata.creator );
 						this.$description.html( eldata.description );
 						if(eldata.buttontext) this.$href.text(eldata.buttontext);
 						else this.$href.text("{{ .Site.Params.buttontext }}")
@@ -319,7 +322,7 @@
 						}
 
 						var self = this;
-						
+
 						if( typeof self.$largeImg != 'undefined' ) {
 							self.$largeImg.remove();
 						}
@@ -334,13 +337,13 @@
 									self.$largeImg = $img.fadeIn( 350 );
 									self.$fullimage.append( self.$largeImg );
 								}
-							} ).attr( 'src', eldata.largesrc );	
+							} ).attr( 'src', eldata.largesrc );
 						}
 
 					},
 					open : function() {
 
-						setTimeout( $.proxy( function() {	
+						setTimeout( $.proxy( function() {
 							this.setHeights();
 							this.positionPreview();
 						}, this ), 25 );
@@ -371,7 +374,7 @@
 							}
 
 						}, this ), 25 );
-						
+
 						return false;
 
 					},
@@ -413,7 +416,7 @@
 						var position = this.$item.data( 'offsetTop' ),
 							previewOffsetT = this.$previewEl.offset().top - scrollExtra,
 							scrollVal = this.height + this.$item.data( 'height' ) + marginExpanded <= winsize.height ? position : this.height < winsize.height ? previewOffsetT - ( winsize.height - this.height ) : previewOffsetT;
-						
+
 						$body.animate( { scrollTop : scrollVal }, settings.speed );
 
 					},
@@ -426,7 +429,7 @@
 					}
 				}
 
-				return { 
+				return {
 					init : init,
 					addItems : addItems
 				};
