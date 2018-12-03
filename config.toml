@@ -1,5 +1,5 @@
-# baseurl = "https://static.grinnell.edu/vaf/"
-baseurl = "https://var.docksal/"
+baseurl = "https://static.grinnell.edu/vaf/"
+# baseurl = "https://var.docksal/"
 # baseurl = "http://localhost:8081/"
 
 languageCode = "en-us"

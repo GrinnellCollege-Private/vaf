@@ -1,5 +1,6 @@
 .og-grid li {
-    margin: 0 0;
+  margin: 0 1px;
+  height: 242px;
 }
 
 nav.top-nav a {
