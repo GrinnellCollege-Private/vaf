@@ -7,4 +7,4 @@ A simple about page in markdown.
 
 Static Site Framework by...  
 - Mackenzie McFate (Grinnell College Class of 2018), and  
-- Mark A. McFate, Digital Library Applications Developer  
+- Mark A. McFate, Digital Library Applications Developer
