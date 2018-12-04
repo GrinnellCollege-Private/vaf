@@ -24,7 +24,6 @@ publishdir = "public"
     # Body background color
     bodybgcolor = "#f9f9f9"
 
-
     # Preview container button text
     buttontext = "Visit this object in Digital.Grinnell"
 

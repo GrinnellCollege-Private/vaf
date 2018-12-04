@@ -4,6 +4,7 @@
 	{{ partial "head.html" . }}
 	{{ template "_internal/google_analytics.html" . }}
 	</head>
+	{{ $baseurl := .Site.BaseURL }}
 	<body>
 		<div class="container">
 				{{ partial "header.html" . }}
@@ -11,6 +12,8 @@
 				<ul id="og-grid" class="og-grid">
 					{{ range $.Site.Data.items.items }}
 					<li>
+						<!-- <a href="{{.url}}" data-largesrc="{{$baseurl}}{{.image}}" data-title="{{.title}}" data-creator="{{.creator}}" data-description="{{.description }}" data-buttontext="{{.buttontext}}">
+							<img class="thumbnail" src="{{$baseurl}}{{.thumb}}" alt="{{.alt}}"/> -->
 						<a href="{{.url}}" data-largesrc="{{.image}}" data-title="{{.title}}" data-creator="{{.creator}}" data-description="{{.description }}" data-buttontext="{{.buttontext}}">
 							<img class="thumbnail" src="{{.thumb}}" alt="{{.alt}}"/>
 						</a>
