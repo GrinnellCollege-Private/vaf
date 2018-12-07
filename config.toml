@@ -16,7 +16,7 @@ publishdir = "public"
 [params]
     # Meta
     title = "Visualizing Abolition and Freedom"
-    subtitle = "Edit config.toml|params|subtitle to change this."
+    # subtitle = "Edit config.toml|params|subtitle to change this."
     author = "This is config.toml|params|author"
     description = "This is config.toml|params|description"
     keywords = "abolition, freedom, Haiti, art, Grinnell College, HSSC"
