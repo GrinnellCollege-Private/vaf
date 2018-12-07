@@ -268,7 +268,7 @@
 				Preview.prototype = {
 					create : function() {
 						this.$title = $( '<h3></h3>' );
-						this.$creator = $( '<p></p>' );
+						this.$creator = $( '<div class="og-creator"></div>' );
 						this.$description = $( '<p></p>' );
 						this.$href = $( '<a href="#" target="_blank">{{ .Site.Params.buttontext }}</a>' );
 						this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$creator, this.$description, this.$href );

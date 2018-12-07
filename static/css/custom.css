@@ -18,12 +18,22 @@ nav.top-nav a {
 
 .og-expander {
   margin: 10px;
+  background: #f6f0f080;
 }
 
 .og-expander-inner {
   padding: 10px;
 }
 
- .og-grid {
+.og-grid {
    padding: 12px 0;
  }
+
+.og-details div.og-creator {
+  font-weight: bold;
+}
+
+.og-details p {
+  color: #c73b2b;
+  margin-top: 1em;
+}
