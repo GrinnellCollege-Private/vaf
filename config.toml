@@ -1,4 +1,4 @@
-baseurl = "https://static.grinnell.edu/vaf/"
+baseurl = "https://static.grinnell.edu/vaf"
 # baseurl = "https://var.docksal/"
 # baseurl = "http://localhost:8081/"
 

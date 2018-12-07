@@ -1,16 +1,23 @@
+.og-grid {
+  padding: 0;
+}
+
 .og-grid li {
-  margin: 0 1px;
-  height: 242px;
+  margin: 2px 0;
+  height: 121px;
+  width: 142px;
 }
 
 nav.top-nav a {
   padding: 0 1em;
 }
 
+/*
 .thumbnail {
   height: 240px;
   width: 275px;
 }
+*/
 
 .container > header {
   padding: 10px 30px 0px;
