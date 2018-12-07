@@ -40,7 +40,24 @@ nav.top-nav a {
   font-weight: bold;
 }
 
+.og-details h3 {
+  padding: 10px 0;
+}
+
 .og-details p {
   color: #c73b2b;
   margin-top: 1em;
+}
+
+.og-fullimg {
+  width: 90%;
+  height: unset;
+}
+
+.og-details {
+  width: inherit;
+  float: left;
+  height: inherit;
+  overflow: visible;
+  position: relative;
 }
