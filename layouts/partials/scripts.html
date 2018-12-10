@@ -378,6 +378,8 @@
 						return false;
 
 					},
+
+
 					calcHeight : function() {
 
 						var heightPreview = winsize.height - this.$item.data( 'height' ) - marginExpanded,
@@ -391,7 +393,18 @@
 						this.height = heightPreview;
 						this.itemHeight = itemHeight;
 
+            console.log("winsize = ",winsize.height)
+						console.log("this.$item.data(height) = ",this.$item.data('height'))
+						console.log("marginExpanded =",marginExpanded)
+						console.log("settings.minHeight = ",settings.minHeight)
+						console.log("heightPreview = ",heightPreview)
+						console.log("itemHeight = ", itemHeight)
+						console.log("this.height = ",this.height)
+						console.log("this.itemHeight = ",this.itemHeight)
+
 					},
+
+
 					setHeights : function() {
 
 						var self = this,
