@@ -14,7 +14,25 @@ docker tag hugo-test mcfatem/vaf:latest
 docker push mcfatem/vaf:latest
 ```
 
-To launch the image as https://static.grinnell.edu/vaf see the gist at https://gist.github.com/McFateM/a008a99f25478cd6e73e463e769c7d75.
+
+To launch the image as https://vaf.grinnell.edu use this:
+
+```
+NAME=vaf
+HOST=vaf.grinnell.edu
+IMAGE="mcfatem/vaf"
+docker container run -d --name ${NAME} \
+    --label traefik.backend=${NAME} \
+    --label traefik.docker.network=traefik_webgateway \
+    --label "traefik.frontend.rule=Host:${HOST}" \
+    --label traefik.port=80 \
+    --label com.centurylinklabs.watchtower.enable=true \
+    --network traefik_webgateway \
+    --restart always \
+${IMAGE}
+```
+
+OR, to launch the image as https://static.grinnell.edu/vaf see the gist at https://gist.github.com/McFateM/a008a99f25478cd6e73e463e769c7d75.
 
 ```
 NAME=vaf
