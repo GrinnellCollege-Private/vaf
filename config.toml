@@ -1,4 +1,4 @@
-baseurl = "https://static.grinnell.edu/vaf"
+baseurl = "https://vaf.grinnell.edu"
 # baseurl = "https://var.docksal/"
 # baseurl = "http://localhost:8081/"
 
@@ -6,7 +6,7 @@ languageCode = "en-us"
 title = "Visualizing Abolition and Freedom"
 theme = "hugrid"
 # Enter your tracking code to enable Google Analytics
-googleAnalytics = "UA-XXXXXXXX-Y"
+googleAnalytics = "UA-131150861-1"
 
 contentdir = "content"
 datadir = "data"
