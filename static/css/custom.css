@@ -36,6 +36,10 @@ nav.top-nav a {
   font-size: 25px;
 }
 
+.og-expander a {
+  display: none; /* Hiding the link for kiosk view  */
+}
+
 .og-expander-inner {
   padding: 10px;
 }
@@ -63,9 +67,9 @@ nav.top-nav a {
 }
 
 .og-details {
-  width: 45%;
-  float: left;
+  width: 95%;
+  /* float: left;
   height: inherit;
-  overflow: visible;
+  overflow: visible; */
   position: relative;
 }

@@ -275,7 +275,7 @@
 						this.$loading = $( '<div class="og-loading"></div>' );
 						this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
 						this.$closePreview = $( '<span class="og-close"></span>' );
-						this.$previewInner = $( '<div class="og-expander-inner"></div>' ).append( this.$closePreview, this.$fullimage, this.$details );
+						this.$previewInner = $( '<div class="og-expander-inner"></div>' ).append( this.$closePreview, this.$details, this.$fullimage );
 						this.$previewEl = $( '<div class="og-expander"></div>' ).append( this.$previewInner );
 						this.$item.append( this.getEl() );
 						if( support ) {
@@ -381,7 +381,6 @@
 
 
 					calcHeight : function() {
-
 						var heightPreview = winsize.height - this.$item.data( 'height' ) - marginExpanded,
 							itemHeight = winsize.height;
 
@@ -401,7 +400,6 @@
 						console.log("itemHeight = ", itemHeight)
 						console.log("this.height = ",this.height)
 						console.log("this.itemHeight = ",this.itemHeight)
-
 					},
 
 
