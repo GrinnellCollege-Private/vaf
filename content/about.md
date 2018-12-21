@@ -30,5 +30,5 @@ Static site framework by...
 - Mackenzie McFate (Grinnell College Class of 2018), and  
 - Mark A. McFate, Digital Library Applications Developer, Grinnell College Libraries  
 
-Static site generation by <a href="https://gohugo.io/" target="_blank">&copy;Hugo</a> / <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">License</a>    
+Static site generation using <a href="https://gohugo.io/" target="_blank">&copy;Hugo</a> / <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">License</a>    
 Theme adapted from <a href="https://themes.gohugo.io/hugrid/" target="_blank">&copy;Hugrid</a> / <a href="https://github.com/aerohub/hugrid/blob/master/LICENSE.md" target="_blank">License</a>  
