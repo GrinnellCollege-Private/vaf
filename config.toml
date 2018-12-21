@@ -28,7 +28,7 @@ publishdir = "public"
     buttontext = "Visit this object in Digital.Grinnell"
 
     # Footer text
-    footertext = "[Grinnell College Libraries](https://github.com/grinnellcollege-private)"
+    footertext = "<a href='https://www.grinnell.edu/academics/libraries' target='_blank'>&copy; Grinnell College Libraries</a>"
 
     # add custom css
     custom_css = ['/css/custom.css']

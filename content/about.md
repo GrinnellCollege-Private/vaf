@@ -25,6 +25,7 @@ Each block was built from five consecutive layers of resin, creating an effect w
 
 As the project began to take form, participation in *Visualizing Abolition and Freedom* was opened to the entire school. A first-year tutorial class, taught by Doug Hess, made this project a part of their class and facilitated an intersection between art and academics seldom seen in classes at Grinnell which are not specifically focused on art or art history. A student activist group, vocal about issues of race and class, also joined the project through recognizing the importance of artwork that creates conversation both inside and outside academic spheres. The collaborative nature of this project has thus resulted in a work of art different from any public art at Grinnell College. It functions not only as a proclamation of Grinnell’s engagement with a prolific artist, but also as a statement of community and inclusion.
 
+ <hr class="custom-hr"> 
 
 Static site framework by...  
 - Mackenzie McFate (Grinnell College Class of 2018), and  
