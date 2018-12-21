@@ -2,7 +2,7 @@ FROM alpine/git
 COPY . /data
 WORKDIR /data
 RUN rm -rf themes/*
-RUN git clone https://github.com/aerohub/hugrid.git themes/hugrid
+RUN git clone https://github.com/DigitalGrinnell/hugrid.git themes/hugrid
 ##
 
 FROM skyscrapers/hugo:0.48

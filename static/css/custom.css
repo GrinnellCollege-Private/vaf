@@ -73,3 +73,7 @@ nav.top-nav a {
   overflow: visible; */
   position: relative;
 }
+
+.main > p {
+  padding: 10px 20px !important;
+}

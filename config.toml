@@ -1,4 +1,4 @@
-baseurl = "https://vaf.grinnell.edu"
+baseurl = "https://vaf.grinnell.edu/"
 # baseurl = "https://var.docksal/"
 # baseurl = "http://localhost:8081/"
 
@@ -31,7 +31,7 @@ publishdir = "public"
     footertext = "[Grinnell College Libraries](https://github.com/grinnellcollege-private)"
 
     # add custom css
-    custom_css = ['css/custom.css']
+    custom_css = ['/css/custom.css']
 
 
 # Lifted from https://gohugo.io/content-management/menus/
@@ -51,8 +51,8 @@ publishdir = "public"
     url = "/about/"
     weight = -110
 
-  [[menu.main]]
-    name = "Production Credits"
-    pre = "<i class='credits-page'></i>"
-    url = "/credits/"
-    weight = -100
+  # [[menu.main]]
+  #   name = "Production Credits"
+  #   pre = "<i class='credits-page'></i>"
+  #   url = "/credits/"
+  #   weight = -100
