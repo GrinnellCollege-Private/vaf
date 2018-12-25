@@ -1,5 +1,6 @@
 .container {
   width: 750px;
+  margin: 0px auto;
 }
 
 .og-grid {
@@ -90,4 +91,20 @@ footer {
 .custom-hr {
   width: 74%;
   margin-left: 13%;
+}
+
+img.inline {
+  padding: 10px;
+}
+
+p.right {
+  text-align: right;
+}
+
+p.left {
+  text-align: left;
+}
+
+p.clear {
+  clear: both;
 }
