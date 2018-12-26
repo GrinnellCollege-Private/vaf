@@ -42,7 +42,7 @@ nav.top-nav a {
 }
 
 .og-expander-inner {
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .og-grid {
@@ -55,20 +55,25 @@ nav.top-nav a {
 
 .og-details h3 {
   padding: 5px 0;
+  margin-bottom: 0;
 }
 
 .og-details p {
   color: #c73b2b;
-  margin: 1em 0;
+  margin: 5px 0 10px 0;
+  /* font-size: smaller; */
 }
 
 .og-fullimg {
   width: 50%;
-  /* height: unset; */
+  height: unset;
+  margin: 10px 0 5px 50px;
+  overflow: scroll;
 }
 
 .og-details {
   width: 95%;
+  height: unset;
   /* float: left;
   height: inherit;
   overflow: visible; */

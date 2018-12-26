@@ -142,7 +142,7 @@
 					transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
 					support = Modernizr.csstransitions,
 					settings = {
-						minHeight : 500,
+						minHeight : 0,       // was 500
 						speed : 350,
 						easing : 'ease'
 					};
@@ -219,8 +219,8 @@
 					} );
 				}
 
-				function getWinSize() {
-					winsize = { width : $window.width(), height : $window.height() };
+				function getWinSize() {  // Math.max(1000...) added by MAM below!
+					winsize = { width : $window.width(), height : Math.max(1000,$window.height()) };
 				}
 
 				function showPreview( $item ) {
@@ -416,6 +416,9 @@
 						this.calcHeight();
 						this.$previewEl.css( 'height', this.height );
 						this.$item.css( 'height', this.itemHeight ).on( transEndEventName, onEndFn );
+
+						console.log("this.previewEl.css = ",this.height)
+						console.log("this.itemHeight.css = ",this.itemHeight)
 
 						if( !support ) {
 							onEndFn.call();
