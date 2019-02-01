@@ -1,6 +1,8 @@
 To build and test a new image locally...
 
 ```
+git clone https://github.com/GrinnellCollege-Private/vaf.git
+cd vaf
 docker image build -t hugo-test .     # <-- executed from my project directory, builds a new up-to-date image
 docker container run --rm -it -p 8081:80 hugo-test
 http://localhost:8081
