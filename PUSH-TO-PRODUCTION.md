@@ -1,4 +1,17 @@
-To build and test a new image locally...
+## To develop locally using Docksal...
+
+```
+cd ~/Docksal-Projects/sites
+git clone https://github.com/GrinnellCollege-Private/vaf.git
+cd vaf
+git clone https://github.com/DigitalGrinnell/hugrid.git themes/hugrid
+fin up
+fin develop
+```
+
+Visit http://vaf.docksal to interact with the site.  In this mode changes made within the local `vaf` directory will be automatically refreshed into http://vaf.docksal.  Be careful with caching in this mode!
+
+## To build and test a new image locally...
 
 ```
 git clone https://github.com/GrinnellCollege-Private/vaf.git
@@ -8,7 +21,7 @@ docker container run --rm -it -p 8081:80 hugo-test
 http://localhost:8081
 ```
 
-To push the new image to Docker Hub...
+### To push the new image to Docker Hub...
 
 ```
 docker login
@@ -16,8 +29,7 @@ docker tag hugo-test mcfatem/vaf:latest
 docker push mcfatem/vaf:latest
 ```
 
-
-To launch the image as https://vaf.grinnell.edu use this:
+### To launch the image as https://vaf.grinnell.edu visit `static.grinnell.edu` and use this:
 
 ```
 NAME=vaf
@@ -34,7 +46,7 @@ docker container run -d --name ${NAME} \
 ${IMAGE}
 ```
 
-OR, to launch the image as https://static.grinnell.edu/vaf see the gist at https://gist.github.com/McFateM/a008a99f25478cd6e73e463e769c7d75.
+### OR, to launch the image as https://static.grinnell.edu/vaf see the gist at https://gist.github.com/McFateM/a008a99f25478cd6e73e463e769c7d75.
 
 ```
 NAME=vaf
@@ -51,7 +63,7 @@ docker container run -d --name ${NAME} \
 ${IMAGE}
 ```
 
-To launch the image as https://vaf.grinnell.edu use this:
+### To launch the image as https://vaf.grinnell.edu use this:
 
 ```
 NAME=vaf

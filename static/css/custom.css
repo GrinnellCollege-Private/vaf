@@ -38,7 +38,7 @@ nav.top-nav a {
 }
 
 .og-expander a {
-  display: none; /* Hiding the link for kiosk view  */
+  display: none;       /* Hiding the link for kiosk view  */
 }
 
 .og-expander-inner {
@@ -64,14 +64,14 @@ nav.top-nav a {
 
 .og-fullimg {
   width: 50%;
-  /* height: unset; */
 }
 
 .og-details {
   width: 95%;
-  /* float: left;
-  height: inherit;
-  overflow: visible; */
+  height: unset;
+  /* float: left; */
+  height: unset !important;
+  /* overflow: visible; */
   position: relative;
 }
 
