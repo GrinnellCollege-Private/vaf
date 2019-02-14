@@ -51,8 +51,9 @@ publishdir = "public"
     url = "/about/"
     weight = -110
 
-  # [[menu.main]]
-  #   name = "Production Credits"
-  #   pre = "<i class='credits-page'></i>"
-  #   url = "/credits/"
-  #   weight = -100
+   [[menu.main]]
+     identifier = "acknowledgements"
+     name = "Production Credits"
+     pre = "<i class='acknowledgements-page'></i>"
+     url = "/acknowledgements/"
+     weight = -100
