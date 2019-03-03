@@ -1,4 +1,9 @@
-# Example Hugo project
+# VAF Kiosk Version
+
+This is the **kiosk** branch and version of **VAF**.  Object data in this project is held in `./data/items.toml` and in this version each of the `[[items]]` keys has NO `url` key/value pair.  This is largely what makes the **kiosk** version differnt than **master**, the public website version.
+
+
+# What Follows is From the Original Project README.md
 
 ## Initializing
 
