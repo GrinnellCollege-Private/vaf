@@ -108,3 +108,29 @@ p.left {
 p.clear {
   clear: both;
 }
+
+/* Adjustments for the addition of URL links (public site ONLY!) */
+
+.og-fullimg img {
+  display: inline-block;
+  max-height: 100%;
+  max-width: 100%;
+  margin-left: 20px;
+}
+
+.og-details {
+  padding: 0 40px 10px 20px;
+}
+
+div.og-link {
+  display: inline-block;
+  width: 30%;
+  margin: 0 10px;
+  border: 2px solid #c73b2b;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+a {
+  font-weight: 500;
+}
