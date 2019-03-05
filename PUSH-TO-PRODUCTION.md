@@ -1,3 +1,12 @@
+# Pushing VAF to Production
+
+First and foremost, be aware that there are TWO versions of the VAF website stored in two different branches of the project repository at `https:/github.com/GrinnellCollege-Private/vaf`:  
+
+  - master : The public version with links to Digital Grinnell and other references.  https://vaf.grinnell.edu
+  - kiosk : The kiosk version with no live links.  https://vaf-kiosk.grinnell.edu
+
+Most of what follows assumes you are building and intend to deploy `vaf.grinnell.edu`.  If working on the kiosk version be sure to substitute `vaf-kiosk` in place of `vaf` wherever you see `[substitute]` noted below.
+
 ## To develop locally using Docksal...
 
 ```
@@ -25,16 +34,16 @@ http://localhost:8081
 
 ```
 docker login
-docker tag hugo-test mcfatem/vaf:latest
-docker push mcfatem/vaf:latest
+docker tag hugo-test mcfatem/vaf:latest       # [substitute]
+docker push mcfatem/vaf:latest                # [substitute]
 ```
 
 ### To launch the image as https://vaf.grinnell.edu visit `static.grinnell.edu` and use this:
 
 ```
-NAME=vaf
-HOST=vaf.grinnell.edu
-IMAGE="mcfatem/vaf"
+NAME=vaf                                      # [substitute]
+HOST=vaf.grinnell.edu                         # [substitute]  
+IMAGE="mcfatem/vaf"                           # [substitute]
 docker container run -d --name ${NAME} \
     --label traefik.backend=${NAME} \
     --label traefik.docker.network=traefik_webgateway \
@@ -79,6 +88,7 @@ docker container run -d --name ${NAME} \
     --restart always \
 ${IMAGE}
 ```
+
 
 
 Original TIFF images are held in `static/images/originals`.  I used https://hackernoon.com/save-time-by-transforming-images-in-the-command-line-c63c83e53b17 and *Imagemagick*'s `mogrify` and `convert` commands to produce the thumbnail and full-size images found in `static/images/thumbs` and `static/images/full`, respectively.
