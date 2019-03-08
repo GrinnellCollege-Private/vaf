@@ -39,3 +39,4 @@ RUN minify --recursive --verbose \
 
 FROM nginx:alpine
 COPY --from=2 /data/public /usr/share/nginx/html
+COPY nginx.vh.default.conf /etc/nginx/conf.d/default.conf
