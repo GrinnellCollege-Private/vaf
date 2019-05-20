@@ -1,5 +1,5 @@
 ---
-description:
+description: About VAF
 date: 2018-12-01 10:50:00
 ---
 

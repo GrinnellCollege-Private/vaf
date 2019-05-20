@@ -5,7 +5,8 @@ RUN rm -rf themes/*
 RUN git clone https://github.com/DigitalGrinnell/hugrid.git themes/hugrid
 ##
 
-FROM skyscrapers/hugo:0.48
+FROM klakegg/hugo:0.55.6
+#FROM skyscrapers/hugo:0.48
 COPY --from=0 /data /data
 WORKDIR /data
 RUN hugo

@@ -1,6 +1,7 @@
 baseurl = "https://vaf.grinnell.edu/"
-# baseurl = "https://var.docksal/"
-# baseurl = "http://localhost:8081/"
+#baseurl = "https://static.grinnell.edu/vaf/"
+#baseurl = "https://var.docksal/"
+#baseurl = "http://localhost:8081/"
 
 languageCode = "en-us"
 title = "Visualizing Abolition and Freedom"
