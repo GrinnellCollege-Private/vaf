@@ -25,8 +25,7 @@ Visit http://vaf.docksal to interact with the site.  In this mode changes made w
 ```
 git clone https://github.com/GrinnellCollege-Private/vaf.git
 cd vaf
-docker image build -t hugo-test .     # <-- executed from my project directory, builds a new up-to-date image
-docker container run --rm -it -p 8081:80 hugo-test
+docker image build -t vaf-test .     # <-- executed from my project directory, builds a new up-to-date image
 http://localhost:8081
 ```
 
@@ -34,8 +33,8 @@ http://localhost:8081
 
 ```
 docker login
-docker tag hugo-test mcfatem/vaf:latest       # [substitute]
-docker push mcfatem/vaf:latest                # [substitute]
+docker tag vaf-test mcfatem/vaf:latest       # [substitute]
+docker push mcfatem/vaf:latest               
 ```
 
 ### To launch the image as https://vaf.grinnell.edu visit `static.grinnell.edu` and use this:
@@ -52,8 +51,9 @@ docker container run -d --name vaf \
     --label com.centurylinklabs.watchtower.enable=true \
     --network traefik_webgateway \
     --restart always \
-mcfate/vaf
+mcfatem/vaf
 ```
+Note: In the above command the variables `NAME`, `HOST`, and `IMAGE` are no longer necessary as references to them have been hard-coded into the `docker container run...` command.
 
 ### OR, to launch the image as https://static.grinnell.edu/vaf see the gist at https://gist.github.com/McFateM/a008a99f25478cd6e73e463e769c7d75.
 
@@ -71,25 +71,6 @@ docker container run -d --name ${NAME} \
     --restart always \
 ${IMAGE}
 ```
-
-### To launch the image as https://vaf.grinnell.edu use this:
-
-```
-NAME=vaf
-HOST=vaf.grinnell.edu
-IMAGE="mcfatem/vaf"
-docker container run -d --name ${NAME} \
-    --label traefik.backend=${NAME} \
-    --label traefik.docker.network=traefik_webgateway \
-    --label "traefik.frontend.rule=Host:${HOST}" \
-    --label traefik.port=80 \
-    --label com.centurylinklabs.watchtower.enable=true \
-    --network traefik_webgateway \
-    --restart always \
-${IMAGE}
-```
-
-
 
 Original TIFF images are held in `static/images/originals`.  I used https://hackernoon.com/save-time-by-transforming-images-in-the-command-line-c63c83e53b17 and *Imagemagick*'s `mogrify` and `convert` commands to produce the thumbnail and full-size images found in `static/images/thumbs` and `static/images/full`, respectively.
 
